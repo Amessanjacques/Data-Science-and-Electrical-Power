@@ -170,7 +170,7 @@ projet-energetique/
 3. Exécuter le pipeline complet : `python src/main.py`
 
 ## Auteur
-Jacques Amessan
+Jacques Amessan, Oumar Fanny Cissé
 
 ## Licence
 Ce projet est sous licence MIT. 
