@@ -67,7 +67,7 @@ Le modèle Random Forest montre les meilleures performances globales.
 - Comparaison entre pays
 
 #### 6. Matrice de Corrélation
-![Matrice de Corrélation](reports/figures/correlation_matrix.png)
+![Matrice de Corrélation](./reports/figures/correlation_matrix.png)
 - Relations entre variables numériques
 - Identification des facteurs clés
 
@@ -76,16 +76,24 @@ Le modèle Random Forest montre les meilleures performances globales.
 #### Performance des Modèles
 
 ##### Régression Linéaire
-![Performance Régression Linéaire](reports/figures/model_performance_linear_regression.png)
+![Performance Régression Linéaire](./reports/figures/model_performance_linear_regression.png)
+- Analyse des prédictions vs valeurs réelles
+- Distribution des résidus
 
 ##### Random Forest
-![Performance Random Forest](reports/figures/model_performance_random_forest.png)
+![Performance Random Forest](./reports/figures/model_performance_random_forest.png)
+- Analyse des prédictions vs valeurs réelles
+- Distribution des résidus
 
 ##### XGBoost
-![Performance XGBoost](reports/figures/model_performance_xgboost.png)
+![Performance XGBoost](./reports/figures/model_performance_xgboost.png)
+- Analyse des prédictions vs valeurs réelles
+- Distribution des résidus
 
 #### Importance des Variables
-![Importance des Variables](reports/figures/feature_importance.png)
+![Importance des Variables](./reports/figures/feature_importance.png)
+- Contribution relative de chaque variable
+- Identification des facteurs les plus influents
 
 ### Visualisations Supplémentaires
 
