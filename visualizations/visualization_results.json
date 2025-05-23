@@ -1,0 +1,37 @@
+{
+    "temporal": {
+        "total_consumption": "visualizations/temporal/total_consumption.png",
+        "per_capita_consumption": "visualizations/temporal/per_capita_consumption.png",
+        "renewable_share": "visualizations/temporal/renewable_share.png"
+    },
+    "correlation": {
+        "correlation_matrix": "visualizations/correlation/correlation_matrix.png"
+    },
+    "model_performance": {
+        "performance_R\u00e9gression": "visualizations/model_performance/performance_R\u00e9gression.png",
+        "performance_Random Forest": "visualizations/model_performance/performance_Random Forest.png",
+        "performance_XGBoost": "visualizations/model_performance/performance_XGBoost.png"
+    },
+    "feature_importance": {
+        "importance_Random Forest": "visualizations/feature_importance/importance_Random Forest.png",
+        "importance_XGBoost": "visualizations/feature_importance/importance_XGBoost.png"
+    },
+    "maps": {},
+    "metrics": {
+        "R\u00e9gression": {
+            "R\u00b2": -0.8457507111663116,
+            "RMSE": 0.37482730115196566,
+            "MAE": 0.3041263636039485
+        },
+        "Random Forest": {
+            "R\u00b2": -1.0068927625576962,
+            "RMSE": 0.40007249410039986,
+            "MAE": 0.32312680170902836
+        },
+        "XGBoost": {
+            "R\u00b2": -0.7837093248058764,
+            "RMSE": 0.3888906336644961,
+            "MAE": 0.319336178801855
+        }
+    }
+}

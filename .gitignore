@@ -1,0 +1,48 @@
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnements virtuels
+venv/
+ENV/
+
+# Fichiers de données (brutes ou intermédiaires) – à ignorer si volumineux ou confidentiels
+# data/raw/
+# data/processed/
+
+# Fichiers de logs
+*.log
+
+# Fichiers de prédictions (à ignorer si volumineux ou générés automatiquement)
+# predictions/*.csv
+
+# Fichiers de visualisations (à ignorer si générés automatiquement)
+# visualizations/*.png
+
+# Fichiers de cache (par exemple, joblib)
+*.joblib
+
+# Fichiers d’IDE (par exemple, .vscode, .idea, etc.)
+.vscode/
+.idea/
+
+# Fichiers système (par exemple, .DS_Store sur macOS)
+.DS_Store 

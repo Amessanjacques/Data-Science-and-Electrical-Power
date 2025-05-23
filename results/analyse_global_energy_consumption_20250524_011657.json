@@ -1,0 +1,163 @@
+{
+    "fichier_source": "global_energy_consumption.csv",
+    "validation": {
+        "nombre_lignes": 10000,
+        "colonnes_manquantes": [],
+        "types_colonnes": {
+            "Country": "object",
+            "Year": "int64",
+            "Total Energy Consumption (TWh)": "float64",
+            "Per Capita Energy Use (kWh)": "float64",
+            "Renewable Energy Share (%)": "float64",
+            "Fossil Fuel Dependency (%)": "float64",
+            "Industrial Energy Use (%)": "float64",
+            "Household Energy Use (%)": "float64",
+            "Carbon Emissions (Million Tons)": "float64",
+            "Energy Price Index (USD/kWh)": "float64"
+        },
+        "valeurs_uniques": {
+            "Country": 10,
+            "Year": 25,
+            "Total Energy Consumption (TWh)": 9958,
+            "Per Capita Energy Use (kWh)": 9989,
+            "Renewable Energy Share (%)": 5944,
+            "Fossil Fuel Dependency (%)": 5309,
+            "Industrial Energy Use (%)": 3680,
+            "Household Energy Use (%)": 2886,
+            "Carbon Emissions (Million Tons)": 9901,
+            "Energy Price Index (USD/kWh)": 46
+        }
+    },
+    "statistiques": {
+        "nombre_lignes": 10000,
+        "nombre_colonnes": 10,
+        "colonnes": [
+            "Country",
+            "Year",
+            "Total Energy Consumption (TWh)",
+            "Per Capita Energy Use (kWh)",
+            "Renewable Energy Share (%)",
+            "Fossil Fuel Dependency (%)",
+            "Industrial Energy Use (%)",
+            "Household Energy Use (%)",
+            "Carbon Emissions (Million Tons)",
+            "Energy Price Index (USD/kWh)"
+        ],
+        "types_colonnes": {
+            "Country": "object",
+            "Year": "int64",
+            "Total Energy Consumption (TWh)": "float64",
+            "Per Capita Energy Use (kWh)": "float64",
+            "Renewable Energy Share (%)": "float64",
+            "Fossil Fuel Dependency (%)": "float64",
+            "Industrial Energy Use (%)": "float64",
+            "Household Energy Use (%)": "float64",
+            "Carbon Emissions (Million Tons)": "float64",
+            "Energy Price Index (USD/kWh)": "float64"
+        },
+        "valeurs_manquantes": {
+            "Country": 0,
+            "Year": 0,
+            "Total Energy Consumption (TWh)": 0,
+            "Per Capita Energy Use (kWh)": 0,
+            "Renewable Energy Share (%)": 0,
+            "Fossil Fuel Dependency (%)": 0,
+            "Industrial Energy Use (%)": 0,
+            "Household Energy Use (%)": 0,
+            "Carbon Emissions (Million Tons)": 0,
+            "Energy Price Index (USD/kWh)": 0
+        },
+        "statistiques_descriptives": {
+            "Year": {
+                "count": 10000.0,
+                "mean": 2012.1514,
+                "std": 7.155235690022933,
+                "min": 2000.0,
+                "25%": 2006.0,
+                "50%": 2012.0,
+                "75%": 2018.0,
+                "max": 2024.0
+            },
+            "Total Energy Consumption (TWh)": {
+                "count": 10000.0,
+                "mean": 5142.564425,
+                "std": 2848.754039875777,
+                "min": 100.48,
+                "25%": 2713.8825,
+                "50%": 5190.85,
+                "75%": 7579.9775,
+                "max": 9999.26
+            },
+            "Per Capita Energy Use (kWh)": {
+                "count": 10000.0,
+                "mean": 25039.950516000004,
+                "std": 14205.659283707482,
+                "min": 500.27,
+                "25%": 12683.22,
+                "50%": 25098.77,
+                "75%": 37113.2825,
+                "max": 49989.57
+            },
+            "Renewable Energy Share (%)": {
+                "count": 10000.0,
+                "mean": 47.322925,
+                "std": 24.603766803245108,
+                "min": 5.0,
+                "25%": 26.11,
+                "50%": 47.15,
+                "75%": 68.6825,
+                "max": 90.0
+            },
+            "Fossil Fuel Dependency (%)": {
+                "count": 10000.0,
+                "mean": 44.93285099999999,
+                "std": 20.202799687006706,
+                "min": 10.01,
+                "25%": 27.3375,
+                "50%": 45.11,
+                "75%": 62.43,
+                "max": 80.0
+            },
+            "Industrial Energy Use (%)": {
+                "count": 10000.0,
+                "mean": 40.057585,
+                "std": 11.538756422931968,
+                "min": 20.0,
+                "25%": 30.2175,
+                "50%": 39.98,
+                "75%": 50.15,
+                "max": 60.0
+            },
+            "Household Energy Use (%)": {
+                "count": 10000.0,
+                "mean": 25.043290000000002,
+                "std": 8.597024289750719,
+                "min": 10.0,
+                "25%": 17.61,
+                "50%": 25.09,
+                "75%": 32.57,
+                "max": 40.0
+            },
+            "Carbon Emissions (Million Tons)": {
+                "count": 10000.0,
+                "mean": 2536.1480070000002,
+                "std": 1424.1050671822902,
+                "min": 50.64,
+                "25%": 1293.33,
+                "50%": 2568.015,
+                "75%": 3766.1825,
+                "max": 4999.34
+            },
+            "Energy Price Index (USD/kWh)": {
+                "count": 10000.0,
+                "mean": 0.273466,
+                "std": 0.1307820983151898,
+                "min": 0.05,
+                "25%": 0.16,
+                "50%": 0.27,
+                "75%": 0.39,
+                "max": 0.5
+            }
+        }
+    }
+}

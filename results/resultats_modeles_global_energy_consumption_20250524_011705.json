@@ -1,0 +1,17 @@
+{
+    "resultats_modeles": {
+        "LinearRegression": {
+            "rmse": 2798.056506836301,
+            "r2": -0.0020035728487504123
+        },
+        "DecisionTree": {
+            "rmse": 4052.909362159207,
+            "r2": -1.102277737653654
+        },
+        "RandomForest": {
+            "rmse": 2839.333623091899,
+            "r2": -0.03178487945219732
+        }
+    },
+    "meilleur_modele": "LinearRegression"
+}
