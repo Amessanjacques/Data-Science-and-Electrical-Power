@@ -248,67 +248,69 @@ Voici quelques visualisations générées automatiquement à partir des données
 
 ### Données Nettoyées
 - **Période d'analyse** : 2000-2023
-- **Nombre de pays** : 10
-- **Variables principales** :
-  - Consommation totale d'énergie (TWh)
-  - Consommation par habitant (kWh)
-  - Part des énergies renouvelables (%)
-  - Dépendance aux énergies fossiles (%)
-  - Utilisation industrielle (%)
-  - Utilisation résidentielle (%)
-  - Émissions de CO2 (Million Tons)
-  - Indice des prix de l'énergie (USD/kWh)
+- **Nombre de pays** : 10 (Australia, Brazil, Canada, China, Germany, India, Japan, Russia, UK, USA)
+- **Nombre d'enregistrements** : 160 (après nettoyage)
+- **Variables principales et leurs bornes** :
+  - Consommation totale d'énergie : 1 000 - 5 000 TWh
+  - Consommation par habitant : 5 000 - 30 000 kWh
+  - Part des énergies renouvelables : 0 - 100%
+  - Dépendance aux énergies fossiles : 0 - 100%
+  - Utilisation industrielle : 20 - 60%
+  - Utilisation résidentielle : 10 - 40%
+  - Émissions de CO2 : 100 - 2 000 Million Tons
+  - Prix de l'énergie : 0.05 - 0.30 USD/kWh
+
+### Méthodologie de Nettoyage des Données
+
+1. **Prétraitement Initial**
+   - Suppression des doublons (Country, Year)
+   - Filtrage des années futures (> 2023)
+   - Application de bornes réalistes pour chaque variable
+
+2. **Validation des Données**
+   - Vérification de la cohérence des pourcentages :
+     * Somme (Utilisation industrielle + résidentielle) ≤ 100%
+     * Somme (Énergies renouvelables + fossiles) ≤ 100%
+   - Suppression des enregistrements incohérents
+   - Correction des valeurs aberrantes par pays (méthode des écarts-types)
+
+3. **Statistiques de Base**
+   - Nombre total d'enregistrements : 160 (réduit de 240 à 160 après nettoyage)
+   - Couverture temporelle : 2000-2023
+   - Pays inclus : 10 pays majeurs
+   - Distribution temporelle : moyenne en 2011.95 (écart-type : 6.87)
 
 ### Visualisations Générées
 
 #### 1. Consommation Énergétique
 ![Consommation Énergétique](reports/figures/consommation_energetique.png)
 - Évolution de la consommation totale par pays (2000-2023)
+- Données nettoyées et validées
 - Tendances et variations inter-pays
-- Points de données marqués pour une meilleure lisibilité
 
 #### 2. Mix Énergétique
 ![Mix Énergétique](reports/figures/mix_energetique.png)
 - Comparaison de la part des énergies renouvelables vs fossiles
 - Moyenne par pays sur la période d'étude
-- Visualisation en barres empilées
+- Données cohérentes (somme ≤ 100%)
 
 #### 3. Émissions de CO2
 ![Émissions CO2](reports/figures/emissions_co2.png)
 - Évolution des émissions de CO2 par pays
-- Tendances temporelles
-- Comparaison inter-pays
+- Données bornées entre 100 et 2000 Million Tons
+- Tendances temporelles validées
 
 #### 4. Prix de l'Énergie
 ![Prix Énergie](reports/figures/prix_energie.png)
 - Évolution des prix de l'énergie par pays
-- Indices en USD/kWh
+- Indices en USD/kWh (0.05 - 0.30)
 - Comparaison des tendances de prix
 
 #### 5. Distribution de l'Utilisation
 ![Utilisation Énergie](reports/figures/utilisation_energie.png)
 - Distribution de l'utilisation énergétique par secteur
-- Comparaison industriel vs résidentiel
+- Données validées (industriel : 20-60%, résidentiel : 10-40%)
 - Analyse par pays
-
-### Méthodologie de Nettoyage des Données
-
-1. **Prétraitement**
-   - Suppression des doublons (Country, Year)
-   - Filtrage des années futures (> 2023)
-   - Correction des valeurs aberrantes
-
-2. **Validation des Données**
-   - Consommation totale : bornes basées sur la moyenne par pays
-   - Consommation par habitant : 1000-50000 kWh
-   - Pourcentages : bornés entre 0 et 100%
-   - Émissions CO2 : bornes basées sur la moyenne par pays
-   - Prix de l'énergie : 0.05-0.5 USD/kWh
-
-3. **Statistiques de Base**
-   - Nombre total d'enregistrements : 240
-   - Couverture temporelle : 2000-2023
-   - Pays inclus : 10 pays majeurs
 
 ### Structure du Projet Mise à Jour
 ```
