@@ -40,34 +40,72 @@ Trois modèles ont été entraînés pour prédire la consommation énergétique
 Le modèle Random Forest montre les meilleures performances globales.
 
 ### Visualisations Générées
-1. **Évolution de la Consommation Énergétique** (`consommation_energetique.png`)
-   - Tendance de la consommation par pays (2000-2023)
-   - Visualisation des pics et baisses de consommation
 
-2. **Mix Énergétique** (`mix_energetique.png`)
-   - Répartition énergies renouvelables vs fossiles
-   - Comparaison entre pays
+#### 1. Évolution de la Consommation Énergétique
+![Évolution de la Consommation Énergétique](reports/figures/consommation_energetique.png)
+- Tendance de la consommation par pays (2000-2023)
+- Visualisation des pics et baisses de consommation
 
-3. **Émissions de CO2** (`emissions_co2.png`)
-   - Évolution des émissions par pays
-   - Identification des tendances de réduction
+#### 2. Mix Énergétique
+![Mix Énergétique](reports/figures/mix_energetique.png)
+- Répartition énergies renouvelables vs fossiles
+- Comparaison entre pays
 
-4. **Prix de l'Énergie** (`prix_energie.png`)
-   - Tendance des prix par pays
-   - Analyse de la volatilité des prix
+#### 3. Émissions de CO2
+![Émissions de CO2](reports/figures/emissions_co2.png)
+- Évolution des émissions par pays
+- Identification des tendances de réduction
 
-5. **Utilisation de l'Énergie** (`utilisation_energie.png`)
-   - Répartition usage industriel vs résidentiel
-   - Comparaison entre pays
+#### 4. Prix de l'Énergie
+![Prix de l'Énergie](reports/figures/prix_energie.png)
+- Tendance des prix par pays
+- Analyse de la volatilité des prix
 
-6. **Matrice de Corrélation** (`correlation_matrix.png`)
-   - Relations entre variables numériques
-   - Identification des facteurs clés
+#### 5. Utilisation de l'Énergie
+![Utilisation de l'Énergie](reports/figures/utilisation_energie.png)
+- Répartition usage industriel vs résidentiel
+- Comparaison entre pays
+
+#### 6. Matrice de Corrélation
+![Matrice de Corrélation](reports/figures/correlation_matrix.png)
+- Relations entre variables numériques
+- Identification des facteurs clés
 
 ### Visualisations des Modèles
-- Graphiques de performance pour chaque modèle
-- Analyse des résidus
-- Importance des variables (pour Random Forest et XGBoost)
+
+#### Performance des Modèles
+
+##### Régression Linéaire
+![Performance Régression Linéaire](reports/figures/model_performance_linear_regression.png)
+
+##### Random Forest
+![Performance Random Forest](reports/figures/model_performance_random_forest.png)
+
+##### XGBoost
+![Performance XGBoost](reports/figures/model_performance_xgboost.png)
+
+#### Importance des Variables
+![Importance des Variables](reports/figures/feature_importance.png)
+
+### Visualisations Supplémentaires
+
+#### Tendances de la Consommation Énergétique
+![Tendances de la Consommation](reports/figures/energy_consumption_trends.png)
+
+#### Part des Énergies Renouvelables
+![Part des Énergies Renouvelables](reports/figures/renewable_energy_share.png)
+
+#### Comparaison du Mix Énergétique
+![Comparaison du Mix Énergétique](reports/figures/energy_mix_comparison.png)
+
+#### Tendances des Émissions de CO2
+![Tendances des Émissions](reports/figures/carbon_emissions_trends.png)
+
+#### Tendances des Prix de l'Énergie
+![Tendances des Prix](reports/figures/energy_price_trends.png)
+
+#### Distribution de l'Utilisation Énergétique
+![Distribution de l'Utilisation](reports/figures/energy_use_distribution.png)
 
 ## Méthodologie
 
