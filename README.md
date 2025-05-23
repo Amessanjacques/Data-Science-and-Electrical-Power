@@ -242,4 +242,96 @@ Voici quelques visualisations générées automatiquement à partir des données
 
 - **Matrice de corrélation des variables numériques**
 
-![Matrice de corrélation](visualizations/correlation/correlation_matrix.png) 
+![Matrice de corrélation](visualizations/correlation/correlation_matrix.png)
+
+## Résultats et Visualisations
+
+### Données Nettoyées
+- **Période d'analyse** : 2000-2023
+- **Nombre de pays** : 10
+- **Variables principales** :
+  - Consommation totale d'énergie (TWh)
+  - Consommation par habitant (kWh)
+  - Part des énergies renouvelables (%)
+  - Dépendance aux énergies fossiles (%)
+  - Utilisation industrielle (%)
+  - Utilisation résidentielle (%)
+  - Émissions de CO2 (Million Tons)
+  - Indice des prix de l'énergie (USD/kWh)
+
+### Visualisations Générées
+
+#### 1. Consommation Énergétique
+![Consommation Énergétique](reports/figures/consommation_energetique.png)
+- Évolution de la consommation totale par pays (2000-2023)
+- Tendances et variations inter-pays
+- Points de données marqués pour une meilleure lisibilité
+
+#### 2. Mix Énergétique
+![Mix Énergétique](reports/figures/mix_energetique.png)
+- Comparaison de la part des énergies renouvelables vs fossiles
+- Moyenne par pays sur la période d'étude
+- Visualisation en barres empilées
+
+#### 3. Émissions de CO2
+![Émissions CO2](reports/figures/emissions_co2.png)
+- Évolution des émissions de CO2 par pays
+- Tendances temporelles
+- Comparaison inter-pays
+
+#### 4. Prix de l'Énergie
+![Prix Énergie](reports/figures/prix_energie.png)
+- Évolution des prix de l'énergie par pays
+- Indices en USD/kWh
+- Comparaison des tendances de prix
+
+#### 5. Distribution de l'Utilisation
+![Utilisation Énergie](reports/figures/utilisation_energie.png)
+- Distribution de l'utilisation énergétique par secteur
+- Comparaison industriel vs résidentiel
+- Analyse par pays
+
+### Méthodologie de Nettoyage des Données
+
+1. **Prétraitement**
+   - Suppression des doublons (Country, Year)
+   - Filtrage des années futures (> 2023)
+   - Correction des valeurs aberrantes
+
+2. **Validation des Données**
+   - Consommation totale : bornes basées sur la moyenne par pays
+   - Consommation par habitant : 1000-50000 kWh
+   - Pourcentages : bornés entre 0 et 100%
+   - Émissions CO2 : bornes basées sur la moyenne par pays
+   - Prix de l'énergie : 0.05-0.5 USD/kWh
+
+3. **Statistiques de Base**
+   - Nombre total d'enregistrements : 240
+   - Couverture temporelle : 2000-2023
+   - Pays inclus : 10 pays majeurs
+
+### Structure du Projet Mise à Jour
+```
+.
+├── data/
+│   ├── raw/               # Données brutes originales
+│   └── processed/         # Données nettoyées (cleaned_energy_data.csv)
+├── src/
+│   ├── data/             # Scripts de nettoyage (clean_data.py)
+│   ├── models/           # Modèles de prédiction
+│   └── visualization/    # Scripts de visualisation (generate_plots.py)
+├── reports/
+│   └── figures/          # Visualisations générées
+└── requirements.txt      # Dépendances Python
+```
+
+### Environnement Technique
+- Python 3.8+
+- Bibliothèques principales :
+  - NumPy, Pandas : Analyse de données
+  - Matplotlib, Seaborn : Visualisation
+  - Scikit-learn : Modélisation
+  - XGBoost : Modèles avancés
+
+## Références Scientifiques
+[À compléter avec les références pertinentes] 
